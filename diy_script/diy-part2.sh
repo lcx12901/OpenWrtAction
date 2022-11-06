@@ -78,11 +78,11 @@ sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 #添加默认登录背景
 rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
 mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
-wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
+wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://i.pximg.net/img-original/img/2022/11/03/13/56/26/102475820_p1.png
 
 rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
+wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://i.pximg.net/img-original/img/2022/11/03/13/56/26/102475820_p1.png
 
 #Diy
 rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
