@@ -92,6 +92,10 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/pa
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8188eu
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl88x2bu
 
+# test 5.10
+sed -i 's/5.15/5.10/g' ./target/linux/rockchip/Makefile
+sed -i 's/5.4/5.10/g' ./target/linux/rockchip/Makefile
+
 #修复一些问题
 ## 修复mac80211编译报错
 # cp -r $GITHUB_WORKSPACE/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch $GITHUB_WORKSPACE/openwrt/package/kernel/mac80211/patches/rt2x00
