@@ -22,11 +22,6 @@ sed -i 's/^[^#].*option ula/#&/' /etc/config/network
 # Temporary repair https://github.com/coolsnowwolf/lede/issues/8423
 # sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
 
-rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/usb
-rm -rf package/kernel/mac80211
-svn export https://github.com/coolsnowwolf/lede/trunk/package/kernel/mac80211 package/kernel/mac80211
-rm -rf package/kernel/rtl8821cu
-
 # 修改terminal主题
 mkdir -p files/root
 pushd files/root
@@ -86,11 +81,6 @@ sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
 
-
-# Add extra wireless drivers
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8812au-ac
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8188eu
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl88x2bu
 
 #修复一些问题
 ## 修复mac80211编译报错
