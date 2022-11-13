@@ -80,6 +80,7 @@ jobs:
       run: |
         cd openwrt
         mkdir customfeeds
+        chmod +x $GITHUB_WORKSPACE/diy_script/hook-feeds.sh
         $GITHUB_WORKSPACE/diy_script/hook-feeds.sh
         ./scripts/feeds update -a
 
