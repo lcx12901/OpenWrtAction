@@ -20,8 +20,8 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav 
 svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav packages/net/gowebdav
 
 # Replace smartdns with the official version
-rm -rf packages/net/smartdns
-svn co https://github.com/openwrt/packages/trunk/net/smartdns packages/net/smartdns
+# rm -rf packages/net/smartdns
+# svn co https://github.com/openwrt/packages/trunk/net/smartdns packages/net/smartdns
 popd
 
 # Set to local feeds
@@ -41,17 +41,17 @@ mkdir package/community
 pushd package/community
 
 # Add Lienol's Packages
-git clone --depth=1 https://github.com/Lienol/openwrt-package
-rm -rf openwrt-package/verysync
-rm -rf openwrt-package/luci-app-verysync
+# git clone --depth=1 https://github.com/Lienol/openwrt-package
+# rm -rf openwrt-package/verysync
+# rm -rf openwrt-package/luci-app-verysync
 
 # Add luci-app-unblockneteasemusic
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 
 # Add luci-aliyundrive-webdav
-rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
-rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
+# rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
+# rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
 popd
