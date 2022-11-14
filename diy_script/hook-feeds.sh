@@ -9,8 +9,8 @@
 #=================================================
 # Svn checkout packages from immortalwrt's repository
 
-#git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
-#git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
+git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
+git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
 
 
 pushd customfeeds
@@ -41,9 +41,9 @@ mkdir package/community
 pushd package/community
 
 # Add Lienol's Packages
-# git clone --depth=1 https://github.com/Lienol/openwrt-package
-# rm -rf openwrt-package/verysync
-# rm -rf openwrt-package/luci-app-verysync
+git clone --depth=1 https://github.com/Lienol/openwrt-package
+rm -rf openwrt-package/verysync
+rm -rf openwrt-package/luci-app-verysync
 
 # Add luci-app-unblockneteasemusic
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
