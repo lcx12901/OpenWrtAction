@@ -10,7 +10,6 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-link custom /usr/src/openwrt/custom-feed
 src-git unblockneteasemusic https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 src-git poweroff https://github.com/esirplayground/luci-app-poweroff
-src-git aliyundrive-webdav https://github.com/messense/aliyundrive-webdav/tree/main/openwrt/luci-app-aliyundrive-webdav
 src-git helloworld https://github.com/fw876/helloworld
 src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
 src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
