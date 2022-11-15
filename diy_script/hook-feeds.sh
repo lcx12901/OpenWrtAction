@@ -49,6 +49,10 @@ rm -rf openwrt-package/luci-app-verysync
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 
+# Add luci-theme
+git clone https://github.com/DHDAXCW/theme
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+
 # Add luci-aliyundrive-webdav
 rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
 rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
