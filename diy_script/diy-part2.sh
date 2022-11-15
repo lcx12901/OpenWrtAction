@@ -39,11 +39,11 @@ cp $GITHUB_WORKSPACE/diy_script/.zshrc files/root/.zshrc
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # 添加新主题
-rm -rf ./feeds/luci/themes/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./feeds/luci/themes/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config
+#rm -rf ./feeds/luci/themes/luci-theme-argon
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./feeds/luci/themes/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config
 if [ ! -d "./package/lean/luci-app-argon-config" ]; then git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config;   else cd ./package/lean/luci-app-argon-config; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome
 if [ ! -d "./package/lean/luci-app-adguardhome" ]; then git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome;   else cd ./package/lean/luci-app-adguardhome; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
 # git clone https://github.com/jerrykuku/lua-maxminddb.git
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
@@ -64,13 +64,13 @@ sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
 sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
 #添加默认登录背景
-#rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
-#mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
-#wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://i.pximg.net/img-original/img/2022/11/03/13/56/26/102475820_p1.png
+rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
+mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
+wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
-#rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-#mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-#wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://i.pximg.net/img-original/img/2022/11/03/13/56/26/102475820_p1.png
+rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
+mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
+wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
 #Diy
 rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
