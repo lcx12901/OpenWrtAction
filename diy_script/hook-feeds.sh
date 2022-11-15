@@ -50,8 +50,8 @@ rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 
 # Add luci-aliyundrive-webdav
-# rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
-# rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
+rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
+rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
 popd
