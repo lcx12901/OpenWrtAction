@@ -45,6 +45,12 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
+# Add luci-app-poweroff
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
+
+# Add OpenClash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+
 # Add luci-app-unblockneteasemusic
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
