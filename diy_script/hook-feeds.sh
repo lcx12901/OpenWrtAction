@@ -9,15 +9,15 @@
 #=================================================
 # Svn checkout packages from immortalwrt's repository
 
-git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
-git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
+# git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
+# git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
 
 
 pushd customfeeds
 
 # Add luci-app-gowebdav
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav luci/applications/luci-app-gowebdav
-svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav packages/net/gowebdav
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav luci/applications/luci-app-gowebdav
+#svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav packages/net/gowebdav
 
 # Replace smartdns with the official version
 # rm -rf packages/net/smartdns
@@ -57,6 +57,7 @@ git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 
 # Add luci-theme
 git clone https://github.com/DHDAXCW/theme
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 
 # Add luci-aliyundrive-webdav
