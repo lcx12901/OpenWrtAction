@@ -9,8 +9,8 @@
 #=================================================
 # Svn checkout packages from immortalwrt's repository
 
-# git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
-# git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
+git clone --depth=1 https://github.com/DHDAXCW/packages customfeeds/packages
+git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
 
 
 pushd customfeeds
