@@ -22,8 +22,8 @@ on:
     - cron: 0 */7 * * *
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-22.03
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
   CONFIG_FILE: config/R5S.config
   DIY_P1_SH: diy_script/diy-part1.sh
