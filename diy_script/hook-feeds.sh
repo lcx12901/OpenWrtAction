@@ -66,3 +66,6 @@ rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
 popd
+
+rm -rf target/linux/rockchip/image/armv8.mk
+cp -f $GITHUB_WORKSPACE/armv8.mk target/linux/rockchip/image/armv8.mk
