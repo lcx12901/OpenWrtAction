@@ -57,7 +57,7 @@ git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 
 # Add luci-theme
 git clone https://github.com/DHDAXCW/theme
-git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 
 # Add luci-aliyundrive-webdav
